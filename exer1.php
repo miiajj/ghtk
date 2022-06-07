@@ -39,7 +39,15 @@ interface Runnable {
     public function run();
 }
 
-class Engine
+interface Engine {
+    
+}
+
+interface Wheel {
+
+}
+
+class ProEngine implements Engine
 {
     protected $type;
 
@@ -56,7 +64,7 @@ class Engine
     }
 }
 
-class Wheel
+class ProWheel implements Wheel
 {
     protected $type;
 
